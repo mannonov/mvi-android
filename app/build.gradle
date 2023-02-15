@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlinx-serialization'
 }
 
 android {
@@ -47,5 +48,9 @@ dependencies {
     implementation "com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines:3.1.0"
     implementation "com.arkivanov.mvikotlin:mvikotlin-timetravel:3.1.0"
     implementation "com.arkivanov.mvikotlin:mvikotlin-timetravel:3.1.0"
+
+    implementation 'io.ktor:ktor-client-android:1.6.8'
+    implementation 'io.ktor:ktor-client-serialization:1.6.8'
+    implementation 'io.ktor:ktor-client-logging-jvm:1.6.8'
 
 }
